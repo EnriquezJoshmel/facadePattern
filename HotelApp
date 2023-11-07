@@ -1,0 +1,12 @@
+package FacadePattern;
+
+public class HotelApp {
+
+    public static void main(String[] args)
+    {
+        FrontDesk frontDesk = new FrontDesk();
+        frontDesk.reqValetService("5399 HO");
+        frontDesk.reqHouseService(40);
+        frontDesk.reqCartService(12);
+    }
+}
