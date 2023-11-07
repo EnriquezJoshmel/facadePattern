@@ -1,0 +1,21 @@
+package FacadePattern;
+
+class Cart implements HotelService{
+
+    private int numberOfCarts;
+
+    public Cart (int numberOfCarts)
+    {
+        this.numberOfCarts = numberOfCarts;
+    }
+
+    @Override
+    public void performService() {
+        requestCart();
+    }
+    private void requestCart()
+    {
+        System.out.println("Requesting now to assist " + numberOfCarts + " carts.");
+    }
+
+}
