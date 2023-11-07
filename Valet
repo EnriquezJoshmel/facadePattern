@@ -1,0 +1,22 @@
+package FacadePattern;
+
+class Valet implements HotelService{
+
+    private String plateNumber;
+
+    public Valet(String plateNumber)
+    {
+        this.plateNumber = plateNumber;
+    }
+
+    @Override
+    public void performService()
+    {
+        pickUpVehicle();
+    }
+    private void pickUpVehicle()
+    {
+        System.out.println("Vehicle now parking with plate number of: " + plateNumber);
+    }
+
+}
